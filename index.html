@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Jagoan Cuaca</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+	<script src="js/angular-route.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/index.css">
+	<link href="https://fonts.googleapis.com/css?family=Rubik:700i" rel="stylesheet">
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDWYWX-ypS-6B7RYtkz7PlHvyzSkdrxvYM" async defer></script>
+</head>
+<body ng-app="myApp">
+	<div class="container" ng-controller="Controller1" id="myScope">
+		<div class="header">
+			<h2 id="head">{{ header }}</h2>
+			<nav>
+			<button class="btn btn-warning own" onclick='window.location.href="#!/home"' ng-click="home()">Home</button>
+			<button class="btn btn-warning own" onclick='window.location.href="#!/cuaca"' ng-click="home()">Cuaca</button>
+			<button class="btn btn-warning own" onclick='window.location.href="#!/map"' ng-click="change()">Peta</button>
+		</nav>
+		</div>
+
+		<div class="main">
+			<div ng-view class="content" ng-if="flag == 'show'"></div>
+			<div id="map" style="height:410px" ng-show="flag != 'show'"></div>
+
+			
+		
+		
+	
+		</div>
+
+
+		<div class="footer">
+				William & Randy Fikri Wirawan	
+		</div>
+	</div>
+
+
+
+	<script src="app/app.js"></script>
+	<script src="factory/factory.js"></script>
+	<script src="controller/controller.js"></script>
+	<script src="js/index.js"></script>
+	<script>	
+
+			      
+
+	</script>
+</body>
+</html>

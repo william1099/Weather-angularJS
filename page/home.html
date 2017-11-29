@@ -1,0 +1,32 @@
+			
+			<div class="ctx">
+			
+				<img src="images/sun.gif" ng-if="about.day == ''"/>
+				<img src="images/sun-dribbble-new2.gif" ng-if="about.day == 'Afternoon'"/>
+				<img src="images/moon2.gif" ng-if="about.day == 'Night'"/>
+				<h2 class="above" >{{ time.day }}, {{  time.timezone }} {{time.abbreviation}}</h2>
+			</div>
+			<div class="form" style="margin-left:0px">
+				<div style="display:inline-block; float:left; margin-left:15px">Hi ! </div>
+				<div class="form-group" style="float:left; margin-top:14px; margin-left:40px">
+				  <textarea class="form-control" rows="1" id="inputt" value="" placeholder="enter country code"></textarea>
+				</div> 
+			</div>
+			
+			<div class="form2">
+				<div class="form-group">
+				  <label for="input">Country or City:</label>
+				  <textarea class="form-control" rows="3" id="input" value="" placeholder="masukkan nama negara atau kota"></textarea>
+				</div>
+				<button class="btn btn-warning own" ng-click="go()">GO !!</button>
+				<button class="btn btn-warning own" ng-click="next()" ng-if="about.country != ''">Next</button>
+			</div>
+
+			<div class="form2" style="margin-top:15px">
+				<h4>Fun Fact : </h4>
+				<div class="result" >
+					<div ng-if="about.country != '' ">
+						{{ about.country }}
+					</div>
+				</div>
+			</div>
