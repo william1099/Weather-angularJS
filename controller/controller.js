@@ -5,9 +5,9 @@ var start = true;
 controllers.controller1 = function($scope, $http, $routeParams, myFactory, $interval, $timeout) {
 	$scope.header = "JagoanCuaca";
 	console.log("masuk1"); console.log(start); console.log(myFactory);
-	var apiKey = "c4172fe27215c2f9204191310aeebfb7";
-	var apiKey2 = "GKBS66OEWYA0";
-	var apiKey3 = "AIzaSyDWYWX-ypS-6B7RYtkz7PlHvyzSkdrxvYM";
+	var apiKey = "<your-openweather-API-key>";
+	var apiKey2 = "<your-timezone-API-key";
+	var apiKey3 = "<your-wikipedia-API-key>";
 	var days = ["Minggu", "Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu"];	
 	var map;
 	
