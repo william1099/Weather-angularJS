@@ -8,7 +8,7 @@ Capable of showing information about weather, timezone etc
 3. Wikipedia API
 
 ### Installation
-Change <your-api-key> to your API key
+Change <> to your API key
 
 ```javascript
 // controller.js
